@@ -1,4 +1,4 @@
 ---
-BasedOnStyle: GNU
+BasedOnStyle: LLVM
 IndentWidth: 2
 ---
