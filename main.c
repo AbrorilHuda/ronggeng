@@ -34,6 +34,20 @@ int main() {
     printf("masukkan umur mu langsung: ");
     scanf("%d", &inputModif);
     calculate(inputModif, myyear);
+    char pertanyaan[2];
+    printf("apakah umur anda mau di kuadratkan: (y/n)");
+    scanf("%s", pertanyaan);
+    if (pertanyaan[1] == inputan[1]) {
+      int inputankuadrat;
+      printf("masukkan angka berapa untuk nilai Y nya: ");
+      scanf("%d", &inputankuadrat);
+      int resultkuadrat = kuadrat(inputModif, inputankuadrat);
+      printf("ini hasil kuadratnya %d\n", resultkuadrat);
+    } else {
+      printf("byee");
+    }
+  } else {
+    printf("byeeee");
   }
   return 0;
 }
