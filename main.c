@@ -27,9 +27,9 @@ int main() {
   calculateAge(myyear);
   char inputan2[2];
   printf("hapus umur atau modif: (y/n):");
-  scanf("%s", inputan2);
-  char inputan[2] = "y";
-  if (inputan2[1] == inputan[1]) {
+  scanf("%1s", inputan2);
+  // printf("result data %c %c\n", inputan[1], inputan[1]);
+  if (inputan2[0] == 'y') {
     int inputModif;
     printf("masukkan umur mu langsung: ");
     scanf("%d", &inputModif);
@@ -37,17 +37,17 @@ int main() {
     char pertanyaan[2];
     printf("apakah umur anda mau di kuadratkan: (y/n)");
     scanf("%s", pertanyaan);
-    if (pertanyaan[1] == inputan[1]) {
+    if (pertanyaan[0] == 'y') {
       int inputankuadrat;
       printf("masukkan angka berapa untuk nilai Y nya: ");
       scanf("%d", &inputankuadrat);
       int resultkuadrat = kuadrat(inputModif, inputankuadrat);
       printf("ini hasil kuadratnya %d\n", resultkuadrat);
     } else {
-      printf("byee");
+      printf("byee\n");
     }
   } else {
-    printf("byeeee");
+    printf("byeeee\n");
   }
   return 0;
 }
